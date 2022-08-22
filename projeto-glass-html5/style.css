@@ -7,13 +7,34 @@ p{
     text-indent: 5px;
     color:blue
 }
-
+.foto01{
+    border: 15px solid white;
+    border-radius: 5px;
+    box-shadow: 20px 20px 20px black;
+    position: relative;
+}
+.img01{
+    height: 80%;
+    width: 80%;
+}
 body
 {
     background-color: rgba(128, 128, 128, 0.533);
 
 }
-figure.fotolegenda{
-    border: 10px black;
-    
-}
+.leg02{ 
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.386);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 3em;
+    transition: opacity 1s ;
+    }
+    figure.foto01:hover figcaption.leg02{
+        opacity: 1;
+    }
